@@ -4,7 +4,7 @@ plt.clf()
 
 # data
 import pandas as pd
-df = pd.read_csv('http://assets.datacamp.com/course/intermediate_python/gapminder.csv', index_col = 0)
+df = pd.read_csv('.csv', index_col = 0)
 gdp_cap = list(df.gdp_cap)
 life_exp = list(df.life_exp)
 pop = list(df['population']/1e6)
