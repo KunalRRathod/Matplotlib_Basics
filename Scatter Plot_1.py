@@ -1,8 +1,8 @@
 import matplotlib.pyplot as plt; import importlib; importlib.reload(plt)
 import pandas as pd
 plt.clf()
-
-df = pd.read_csv('http://assets.datacamp.com/course/intermediate_python/gapminder.csv', index_col = 0)
+# use any dataset
+df = pd.read_csv('.csv', index_col = 0)
 gdp_cap = list(df.gdp_cap)
 life_exp = list(df.life_exp)
 
