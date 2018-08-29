@@ -2,7 +2,8 @@ import matplotlib.pyplot as plt; import importlib; importlib.reload(plt)
 plt.clf()
 import numpy as np
 import pandas as pd
-df = pd.read_csv('http://assets.datacamp.com/course/intermediate_python/gapminder.csv', index_col = 0)
+# Any Dataset
+df = pd.read_csv('.csv', index_col = 0)
 gdp_cap = list(df.gdp_cap)
 life_exp = list(df.life_exp)
 pop = list(df['population']/1e6)
