@@ -1,7 +1,8 @@
 import matplotlib.pyplot as plt; import importlib; importlib.reload(plt)
 import pandas as pd
 plt.clf()
-df = pd.read_csv('http://assets.datacamp.com/course/intermediate_python/gapminder.csv', index_col = 0)
+# Any CSV dataset
+df = pd.read_csv('.csv', index_col = 0)
 life_exp = list(df.life_exp)
 
 #To control the number of bins to divide your data in, you can set the bins argument.
